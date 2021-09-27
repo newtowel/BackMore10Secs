@@ -1,0 +1,12 @@
+{
+    "name":"ニコ動で10秒前に戻るやつ",
+    "description":"ニコニコ動画で「コメントの再生時間に移動」ボタンを使うとき、いつも10秒戻すボタンを一緒に押していませんか？　この拡張機能で、いつものコメント時間移動ボタン押下だけでその10秒前まで戻れます！",
+    "version":"1.0",
+    "manifest_version":3,
+    "content_scripts":[
+        {
+            "matches":["https://www.nicovideo.jp/watch/*"],
+            "js":["backMore10secs.js"]
+        }
+    ]
+}
